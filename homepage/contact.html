@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Edit this to set page title</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<!-- your html here -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Edit this to set page title</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- your html here -->
+
+    <div>
+      <button><a href="index.html">Homepage</a></button>
+      <button><a href="cv.html">Resume</a></button>
+      <button><a href="contact.html">Contact</a></button>
+    </div>
+    <div>
+      <!-- <h4>Contact me:</h4> -->
+      <p>Fill out the form and send a message:</p>
+      <div>
+        <form action="https://formsubmit.co/yoni1.fili@gmail.com" method="POST">
+          <div>
+            <lablel for="full-name">Full Name</lablel>
+            <br />
+            <input type="text" name="Name" placeholder="Fullname" required />
+          </div>
+          <div>
+            <lablel for="email">Email</lablel>
+            <br />
+            <input type="email" name="Email" placeholder="Email" required />
+          </div>
+          <div>
+            <label for="Subject">Subject</label>
+            <br />
+            <input
+              type="Subject"
+              name="subject"
+              placeholder="subject"
+              required
+            />
+          </div>
+          <div>
+            <label for="message">Write Your Message</label>
+            <br />
+            <textarea
+              name="Text"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit"><u>Send</u></button>
+          <button type="clear"><a href="contact.html">Clear</a></button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
