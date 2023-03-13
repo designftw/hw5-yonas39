@@ -17,12 +17,15 @@
   background-color: #191919;
 }
 nav {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 45px 8% 8%;
 }
-
+.about-text span {
+  color: #ff7f11;
+}
 .logo {
   color: beige;
   font-size: 35px;
@@ -227,19 +230,32 @@ button:hover {
   font-size: 16px;
   font-weight: bold;
 }
-
+.portfolio-section {
+  background-color: #191919;
+  margin: 30px;
+  padding: 50px 100px;
+}
 /* portfolio */
-
+.portfolio-section h2 {
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  /* width: 100%; */
+  text-align: center;
+  color: white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
 .portfolio_container {
-  /* background-color: #191919; */
-  /* background: #191919; */
-
+  display: grid;
+  grid-template-rows: 50%;
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px;
   width: 100%;
+  /* width: 1000px; */
   padding: 0px;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fi, minimax(300px, 1fr));
-  grid-gap: 1rem;
+
+  /* grid-template-columns: repeat(auto-fi, minimax(300px, 1fr)); */
   margin: 2rem;
 }
 .item {
@@ -250,7 +266,38 @@ button:hover {
 }
 .item:hover {
   transform: translateY(-5px);
+}
+.grid_1 {
+  background-color: #ff7f11;
+}
+.grid_1:hover {
   background-color: #101010;
+  color: #ff7f11;
+  border: #ff7f11 2px solid;
+}
+.grid_2 {
+  background-color: black;
   color: white;
+}
+.grid_2:hover {
+  background-color: #101010;
+  color: #ff7f11;
+  border: #ff7f11 2px solid;
+}
+.grid_3 {
+  background-color: #ff7f11;
+}
+.grid_3:hover {
+  background-color: #101010;
+  color: #ff7f11;
+  border: #ff7f11 2px solid;
+}
+.grid_4 {
+  background-color: black;
+  color: white;
+}
+.grid_4:hover {
+  background-color: #101010;
+  color: #ff7f11;
   border: #ff7f11 2px solid;
 }
