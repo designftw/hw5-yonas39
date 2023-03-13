@@ -1,1 +1,26 @@
 /* add some css to make writeup prettier */
+* {
+  background-color: #fffeee;
+  /* margin: 0, 2em;
+  padding: 1rem 1rem 1rem 0; */
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+article h2 {
+  color: #191919;
+  text-decoration: underline;
+  padding: 10px 3rem;
+  margin: 10px 2rem;
+}
+p {
+  margin: 0 100px;
+  padding: 0 20px;
+}
+ul li {
+  padding: 0 20px;
+  margin: 0 150px;
+}
