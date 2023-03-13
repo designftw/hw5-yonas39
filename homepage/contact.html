@@ -5,34 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=`, initial-scale=1.0" />
     <title>Edit this to set page title</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact_style.css" />
   </head>
   <body>
     <!-- your html here -->
-
-    <div>
-      <button><a href="index.html">Homepage</a></button>
-      <button><a href="cv.html">Resume</a></button>
-      <button><a href="contact.html">Contact</a></button>
+    <div class="hero">
+      <nav>
+        <h2 class="logo">Yonas <span>Mekonnen</span></h2>
+        <ul>
+          <li><a href="cv.html"> Home</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <!-- <li><a href="#">Contact me</a></li> -->
+        </ul>
+        <a href="contact.html" class="btn">Contact Me</a>
+      </nav>
     </div>
-    <div>
+
+    <!-- <div>
+      <a href="index.html">Homepage</a>
+      <a href="cv.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div> -->
+    <div class="message_container">
       <!-- <h4>Contact me:</h4> -->
       <p>Fill out the form and send a message:</p>
       <div>
         <form action="https://formsubmit.co/yoni1.fili@gmail.com" method="POST">
           <div>
-            <lablel for="full-name">Full Name</lablel>
-            <br />
+            <lablel for="full-name">Full Name: </lablel>
             <input type="text" name="Name" placeholder="Fullname" required />
           </div>
+
           <div>
-            <lablel for="email">Email</lablel>
-            <br />
+            <lablel for="email">Email: </lablel>
             <input type="email" name="Email" placeholder="Email" required />
           </div>
           <div>
-            <label for="Subject">Subject</label>
-            <br />
+            <label for="Subject">Subject:</label>
             <input
               type="Subject"
               name="subject"

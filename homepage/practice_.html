@@ -1,104 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=`, initial-scale=1.0" />
-	<title>Edit this to set page title</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<!-- your html here -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+        margin: 2rem;
+      }
 
-	<div>
-		<!-- <button><a href="index.html">Homepage</a></button>
-		<button><a href="cv.html">Resume</a></button>
-		<button><a href="contact.html">Contact</a></button> -->
-	
-	</div>
-	<div style="margin-left:50px">
-	<br/>
-	<div>
-		<address>
-			<strong>Yonas Mekonnen</strong>
-			<br />77 Massachussets Av. <br />Cambridge, MA 02139
-		</address>
-	</div>
+      .item {
+        background-color: #f9f9f9;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
 
-	<h3>Education:</h3>
-	<div>
-		<ul>
-			<div>
-				<p>
-					<strong>Massachussets Institue of Technology</strong>
-				</p>
-				<ul>
-					<li>Computer Science and Engineering 4.75</li>
-					<br>expected graduation date May, 2024<br/>
-				</ul>
-			</div>
-			<div>
-				<p><strong>BunkerHill Community College</strong></p>
-				<ul>
-					<li>Associates degree in Biomedical Engineering GPA 3.92</li>
-					<br>december, 2020</br>
-				</ul>
-			</div>
-		</ul>
-	</div>
+      .item:hover {
+        transform: translateY(-5px);
+      }
 
-	<h3>Skills:</h3>
-	<div>
-		<ul>
-			<li>Strong understanding of object-oriented programming concepts</li>
-			<li>Proficient in Python</li>
-			<li>Familiar with C, C++, HTML, CSS, and JavaScript</li>
-			<li>Knowledge of data structures and algorithms</li>
-			<li>Excellent problem-solving skills</li>
-			<li>Strong communication and teamwork skills</li>
-		</ul>
-	</div>
+      .item1 {
+        background-image: linear-gradient(to bottom right, #2980b9, #2c3e50);
+        color: #fff;
+      }
 
-	<h3>Projects:</h3>
-	<div>
-		<ul>
-			<li>
-				AutoCorrect: I wrote a program that can suggest a letter or a word
-				using python and Trie-Data structure. Also built an autofill version
-				of a similar program.
-			</li>
-			<li>
-				Audio processor: Developed a program that can manipulate both Mono and
-				stereo sounds
-			</li>
-			<li>
-				SAT solver: build a program that can solve SAT using the Boolean
-				satisfiability method. This program also solves sudoku following the
-				same method.
-			</li>
-			<li>
-				Personal website: Built a website using HTML, CSS, and JavaScript that
-				displays information about a fictional company.
-			</li>
-			<li>
-				Sokoban: Developed a multistage Sokoban game where the player moves
-				blocks toward target locations along with the game solver. Using
-				search algorithms BFS and DFS.
-			</li>
-		</ul>
-	</div>
-</div>
+      .item2 {
+        background-image: linear-gradient(to bottom right, #e74c3c, #c0392b);
+        color: #fff;
+      }
 
+      .item3 {
+        background-image: linear-gradient(to bottom right, #27ae60, #2ecc71);
+        color: #fff;
+      }
 
-<footer style="margin-left:50px">
-<p>
-	Download my
-	<a href="Data/Resume.pdf" download>PDF resume </a>
-</p>
-<p>
-	For additional information
-	<a href="contact.html" target="_blank">Send me an Email.</a>
-</p>
-</footer>
-</body>
+      .item4 {
+        background-image: linear-gradient(to bottom right, #f1c40f, #f39c12);
+        color: #fff;
+      }
+
+      .item5 {
+        background-image: linear-gradient(to bottom right, #9b59b6, #8e44ad);
+        color: #fff;
+      }
+
+      .item6 {
+        background-image: linear-gradient(to bottom right, #34495e, #2c3e50);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item item1">
+        <h2>Project 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="item item2">
+        <h2>Project 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="item item3">
+        <h2>Project 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="item item4">
+        <h2>Project 4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="item item5">
+        <h2>Project 5</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="item item6">
+        <h2>Project 6</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </body>
 </html>
+
+<!-- <div class="hero">
+      <nav>
+        <h2 class="logo">Yonas <span>Mekonnnen</span></h2>
+        <ul>
+          <li><a href="#"> Home</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact me</a></li>
+        </ul>
+        <a href="#" class="btn">Contact Me</a>
+      </nav>
+      <div class="content">
+        <article class="text_container">
+          <p>
+            I am an ambitious and enthusiastic computer science and engineering
+            student at the Massachusetts Institute of Technology. I am
+            passionate about leveraging technology to tackle real-world issues.
+            My academic background has exposed me to various programming
+            languages, software development methodologies, and systems design. I
+            am excited about contributing to a challenging and dynamic work
+            environment where I can continue to expand my skills and knowledge.
+            I work on personal projects during my free time to enhance my
+            technical expertise and teamwork skills. My current interests lie in
+            software development, artificial intelligence, machine learning, and
+            data science. If you are looking for a dedicated and hard-working
+            computer science and engineering student, I would love to connect
+            with you!
+          </p>
+        </article>
+        <div class="newsletter">
+          <form action="">
+            <input
+              type="email"
+              name="email"
+              id="mail"
+              placeholder="Type your email"
+            />
+            <input type="submit" name="submit" value="Lets Connect" />
+          </form>
+        </div>
+      </div>
+    </div> -->
