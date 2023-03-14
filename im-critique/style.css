@@ -1,5 +1,6 @@
 /* add some css to make writeup prettier */
 * {
+  line-height: 1.75;
   background-color: #fffeee;
   /* margin: 0, 2em;
   padding: 1rem 1rem 1rem 0; */
@@ -17,10 +18,12 @@ article h2 {
   margin: 10px 2rem;
 }
 p {
+  font-size: 18px;
   margin: 0 100px;
   padding: 0 20px;
 }
 ul li {
+  font-size: 18px;
   padding: 0 20px;
   margin: 0 150px;
 }
