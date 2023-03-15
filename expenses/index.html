@@ -6,6 +6,7 @@
     <title>Expenses</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- I HAVE a Hard time understanding vue.js. what should I do to update the spreadsheet? update Json?. -->
     <div id="app">
@@ -45,10 +46,10 @@
           </div>
 
           <!-- ###### Login and Logout ##################-->
-          <button type="submit" v-if="!isLoggedIn" class="btn">Login</button>
-          <!-- <button type="button" typev-else @click="logout" class="login-btn">
+          <!-- <button type="submit" v-if="!isLoggedIn" class="btn">Login</button> -->
+          <button type="button" typev-else @click="logout" class="login-btn">
             Logout
-          </button> -->
+          </button>
           <button type="submit" class="login-btn">Create Account</button>
         </div>
 
@@ -60,44 +61,45 @@
           <grid>
             <form class="expense-form">
               <div class="expense_labels">
-                <label for="payer" class="label_titles">Payer:</label> <br />
-                <select name="payer">
+                <label for="payer" class="label_titles" >Payer:</label> <br />
+                <select name="payer" v-model="payer">
                   <option value="neo">Neo</option>
                   <option value="trinity">Trinity</option>
                 </select>
               </div>
 
               <div class="expense_labels">
-                <label for="payee" class="label_titles">Payee:</label> <br />
-                <select name="payee" id="payee">
+                <label for="payee" class="label_titles" >Payee:</label> <br />
+                <select name="payee" id="payee" v-model="payee">
                   <option value="neo">Trinity</option>
                   <option value="trinity">Neo</option>
                 </select>
               </div>
 
               <div class="expense_labels">
-                <label for="amount" class="label_titles">Amount:</label> <br />
+                <label for="amount" class="label_titles" >Amount:</label> <br />
                 <input
                   type="text"
                   name="amount"
                   placeholder="$100"
                   id="amount"
+                  v-model="amount"
                 />
               </div>
 
               <div class="expense_labels">
                 <label class="label_titles">Date</label> 
-                <input type="date" />
+                <input type="date" v-model="new_trinity_paid" />
               </div>
 
               <div class="expense_labels">
-                <label class="label_titles">Discription</label>
-                <input type="text" name="Detail " />
+                <label class="label_titles">Description</label>
+                <input type="text" name="Detail " v-model="newtitle"/>
               </div>
             </form>
           </grid>
           <div>
-            <button type="submit" class="btn" @click="addInputBox">
+            <button type="submit" class="btn" @click="AddExpense">
               Add Expense
             </button>
             <button type="submit" class="btn" @click="removeInputBox(index)">
@@ -155,16 +157,16 @@
 
       <!-- ################ tutorial ###########-->
        <!-- ################ tutorial ###########-->
-           <!-- ################ tutorial ###########-->
+          <!-- ################ tutorial ###########-->
                <!-- ################ tutorial ###########-->
 
                
       <!-- <div> {{expenses}}</div> -->
       <div>
         <!-- <p>The Json file practice</p> -->
-        <div v-for="exp in expenses">
+        <div >
     
-            <table >
+          <table >
               <thead>
                   <tr>
                       <th colspan="2">The Json file practice</th>
@@ -177,12 +179,9 @@
                   </tr>
               </tbody>
           </table>
-          </table>
-        </table>
-        </table>
+    
       </div>
     </div>
-
     <script src="index.js" type="module"></script>
   </body>
 </html>

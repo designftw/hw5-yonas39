@@ -1,0 +1,40 @@
+<!-- Exercise 2: Couple Expenses App Implementation (60%)
+It is now time to implement an app for the expenses problem we explored in HW1. This time, you have also learned a little bit of CSS, 
+and you can also use that in your prototype.
+
+You don't need to use any of the HTML you have wireframed in HW1, you can (and likely should) change your design decisions.
+
+For this exercise we want you to think hard about the problem space, and create an innovative efficient interface that is tailored 
+to the problem, rather than adopting a design that is similar to other expenses apps out there that have different goals.
+
+Your interface should make common use cases efficient, and uncommon use cases possible.
+
+Your app should focus on being efficient for the most common cases. Neo and Trinity will use this all the time, and if it takes too 
+long to enter something, they are more likely to forget to enter it at all.
+
+The most common cases are:
+
+Neo or Trinity paid for a joint expense
+The joint card paid for a personal expense of Neo's or Trinity's
+Entering expenses retroactively (i.e. days or even weeks after they happened) is pretty common
+Expenses are entered in USD
+For these cases, use KLM (discussed at the end of the Efficiency lecture) to reduce the number of keystrokes needed, and eliminate homing between keyboard and mouse as much as possible. It should be possible to add a common type of expense without using the mouse at all, and without more than five keystrokes (if that) to select payer and payee. You don't need to include your KLM analysis anywhere, this is to help you make better design decisions.
+
+While efficiency is the focus of this exercise, learnability and safety still matter. It is acceptable to make some tradeoffs between learnability and efficiency (since this is an app for specific users, built for their needs), but the interface cannot be entirely obscure. For example, a UI where payer and payee is selected through pressing A-J for each of the 9 combinations may reduce selecting this info to a single keystroke, but it is not an acceptable tradeoff, as it sacrifices too much learnability, and is not memorable as it relies entirely on knowledge in the head.
+
+While common cases are most important and the UI should be designed to optimize them, uncommon cases should still be possible to enter, with reasonable efficiency. Uncommon cases you must support include the following:
+
+Trinity and Neo went traveling. Some of their expenses are now in a different currency, however the total amounts owed still need to be in USD (the skeleton includes a rudimentary currencyConvert(from, to, amount) function for you — since this is a prototype it's ok to only support USD, EUR and GBP currencies).
+For some expenses, Trinity and Neo both paid unequal amounts. These expenses might be joint expenses, or they might be expenses for just one person.
+Some expenses don't change the amount of money one person owes the other. For example, Trinity and Neo might have split a joint expense equally, or Trinity might have paid for an expense for herself. However, they still might want to record this expense in the app for bookkeeping purposes so they know how much money they spent.
+The design challenge you need to solve is how to accommodate these uncommon cases, while keeping the common cases as efficient as possible. If you think of additional interesting uncommon cases, you may earn some bonus points, but you won't lose for supporting only these.
+
+We want you to focus on the expense entering and editing UI and really think creatively about optimizing that, not on analytics, so don’t worry about charts and other summary information (though of course you’re welcome to work on that as well, after you’re done, as extra credit)
+
+The app should be fully functional, including storage.
+
+You will be implementing this as a VueJS app, using the MaVue helpers if you want. The skeleton repo includes an app that reads and saves to GitHub, as well as the data from the spreadsheet in JSON format, though you need to modify the URL to that of your own repo so you can save.
+
+We wrote the MaVue helpers so you can use VueJS without learning (much) JS, since learning JS properly comes later in the semester. You are not graded on how you write JS until we cover it properly; therefore if you need any help writing JS expressions for Vue, feel free to ask the course staff on Piazza or OH (try to reduce your question to just the part about JS, to avoid giving away part of your solution!).
+
+Deliverable: Your app in the expenses/ directory of the starter repo. Since this is a design task, depending on your design, you may need to modify index.js. If you do, don’t hesitate to reach out to ask about what JS would implement what you need to do. We are not grading you on how you write JS, only on the interface you design. -->
