@@ -6,6 +6,7 @@
   padding: 1rem 1rem 1rem 0; */
 }
 h1 {
+  background-color: bisque;
   text-align: center;
   margin-top: 50px;
   padding: 20px;
@@ -14,16 +15,22 @@ h1 {
 article h2 {
   color: #191919;
   text-decoration: underline;
-  padding: 10px 3rem;
-  margin: 10px 2rem;
+  padding: 10px 3.5rem;
+  margin: 10px 3.5rem;
 }
-p {
-  font-size: 18px;
-  margin: 0 100px;
+article p {
+  text-indent: 50px;
+  font-size: 22px;
+  margin: 0 100px 15px;
   padding: 0 20px;
 }
 ul li {
-  font-size: 18px;
-  padding: 0 20px;
-  margin: 0 150px;
+  font-size: 22px;
+  padding: 0 20px 10px;
+  margin: 0 150px 10px;
+}
+
+footer {
+  padding: 30px;
+  margin: 20px;
 }
