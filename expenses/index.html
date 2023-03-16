@@ -79,12 +79,10 @@
             </form>
           </grid>
           <div>
-            <button type="submit" class="btn" @click="AddExpense">
+            <button type="submit" class="btn" @click="AddExpense" @click="reset">
               Add Expense
             </button>
-            <!-- <button type="submit" class="btn" @click="removeInputBox(index)">
-              Remove Expense
-            </button> -->
+            <a href="index.html"><button>clear</button></a>
             <p > <strong>
               Neo </strong> ows <strong>Trinity</strong>: {{total_balance}}</p>
           </div>
@@ -150,8 +148,10 @@
                   <tr>
                     <th>Title</th>
                     <th>Trinity paid</th>
+                    <th>Trinity for Neo</th>
                     <th>Neo paid</th>
-                    <th>Payee</th>
+                    <th>Neo forTrinity </th>
+                    <th>Paid for</th>
                     <th>Date</th>
                   </tr>
               </thead>
@@ -160,10 +160,10 @@
                     
                       <td>{{exp.title}}</td>
                       <td>{{exp.trinity_paid}}</td>
+                      <td>{{exp.trinity_paid_for_neo}}</td>
                       <td>{{exp.neo_paid}}</td>
+                      <td>{{exp.neo_paid_for_trinity}}</td>
                       <td>{{exp.payee}}</td>
-                      <!-- <td>{{exp.trinity_paid_for_neo}}</td>
-                      <td>{{exp.neo_paid_for_trinity}}</td> -->
                       <td>{{exp.date}}</td>
                   </tr>
               </tbody>

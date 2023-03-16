@@ -4,6 +4,7 @@ globalThis.app = createApp(
   {
     data: {
       expenses: [],
+      reset: "index.html",
       name: "",
       currencyfrom: [
         { name: "USD", desc: "Dollar" },
@@ -34,6 +35,9 @@ globalThis.app = createApp(
     },
 
     methods: {
+      // reset(){
+      //   this.reset = reset
+      // }
       AddExpense() {
         // trintity pays joint ---> neo ows half  or the opposite
         //payer and payee  then sum the two and assingn half of the value
@@ -86,6 +90,7 @@ globalThis.app = createApp(
         // alert(this.new_neo_paid);
         this.expenses.push({
           title: this.newtitle,
+
           neo_paid: this.new_neo_paid,
           trinity_paid: this.new_trinity_paid,
 
