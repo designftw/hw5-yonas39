@@ -1,1 +1,9 @@
 /* add some css to make writeup prettier */
+article p {
+  font-size: 25px;
+  padding: 20px;
+  margin: 20px;
+}
+h1 {
+  text-align: center;
+}
