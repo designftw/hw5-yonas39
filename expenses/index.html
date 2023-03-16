@@ -116,7 +116,7 @@
             <div>
 
               <span class="currecy_menu_text">To:</span>
-              
+
               <select v-model="convertto">
                 <option
                   v-for="(currency,index) in currencyfrom"
@@ -140,12 +140,12 @@
       <div>
         <!-- <p>The Json file practice</p> -->
         <div >
-    
+          <details>
+            <summary>Click here to see expense history</summary>
           <table >
               <thead>
                   <tr>
-                      <th colspan="6">The Json file practice</th>
-
+                      <th colspan="6">Expense Report</th>
                   </tr>
                   <tr>
                     <th>Title</th>
@@ -157,6 +157,7 @@
                     <th>Date</th>
                   </tr>
               </thead>
+
               <tbody v-for="exp in expenses">
                   <tr>
                     
@@ -169,7 +170,9 @@
                       <td>{{exp.date}}</td>
                   </tr>
               </tbody>
+            
           </table>
+        </details>
     
       </div>
     </div>
