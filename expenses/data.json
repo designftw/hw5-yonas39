@@ -123,5 +123,14 @@
 		"neo_paid_for_trinity": "",
 		"payee": "neo",
 		"date": "2023-03-15"
+	},
+	{
+		"title": "Trinity for neo",
+		"neo_paid": "7777",
+		"trinity_paid": "8888",
+		"trinity_paid_for_neo": "",
+		"neo_paid_for_trinity": "",
+		"payee": "trinity",
+		"date": "2023-03-15"
 	}
 ]
