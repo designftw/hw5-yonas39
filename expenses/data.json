@@ -70,5 +70,12 @@
 		"neo_paid_for_trinity": "",
 		"payee": "neo",
 		"date": ""
+	},
+	{
+		"title": "yyy",
+		"trinity_paid_for_neo": "",
+		"neo_paid_for_trinity": "",
+		"payee": "trinity",
+		"date": ""
 	}
 ]
