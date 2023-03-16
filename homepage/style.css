@@ -306,3 +306,126 @@ button:hover {
   float: right;
   margin-right: 1em;
 }
+
+/* ################## portfolio ########## */
+body {
+  background-color: #191919;
+}
+.portfolio-section {
+  width: 100%;
+  height: 100%;
+  margin: 10px 50px 50px;
+  padding: 50px;
+
+  border-radius: 30px;
+}
+
+.portfolio_container {
+  /* background-color: #191919; */
+  /* margin: 30px;
+  padding: 50px 100px; */
+  margin: 20px;
+  padding: 30px;
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+}
+/* portfolio */
+.portfolio-section h2 {
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  /* width: 100%; */
+  text-align: center;
+  color: white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+/* .portfolio_container {
+  display: grid;
+  grid-template-rows: 50%;
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px;
+  width: 100%; */
+/* width: 1000px; */
+/* padding: 0px;
+  width: 100%; */
+
+/* grid-template-columns: repeat(auto-fi, minimax(300px, 1fr)); */
+/* margin: 2rem;
+} */
+.portfolio-item {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.item {
+  padding: 40px;
+  margin: 30px;
+  border-radius: 30px;
+}
+.item:hover {
+  transform: translateY(-5px);
+}
+.grid_1 {
+  background-color: #ff7f11;
+}
+.grid_1:hover {
+  background-color: #101010;
+  color: #ff7f11;
+  border: #ff7f11 2px solid;
+}
+.grid_2 {
+  /* background-color: black; */
+  background-color: #ff7f11;
+  /* color: white; */
+}
+.grid_2:hover {
+  background-color: #101010;
+  color: #ff7f11;
+  border: #ff7f11 2px solid;
+}
+.grid_3 {
+  background-color: #ff7f11;
+}
+.grid_3:hover {
+  background-color: #101010;
+  color: #ff7f11;
+  border: #ff7f11 2px solid;
+}
+.grid_4 {
+  /* background-color: black; */
+  background-color: #ff7f11;
+  /* color: white; */
+}
+.grid_4:hover {
+  background-color: #101010;
+  color: #ff7f11;
+  border: #ff7f11 2px solid;
+}
+.portfolio-section .portfolio_container .port_img {
+  border: 10px solid white;
+  border-radius: 10%;
+  padding: 10px;
+  height: 30vh;
+  width: 20vw;
+  float: left;
+  margin-right: 3em;
+  /* margin: 10px;
+  padding: 10px; */
+}
+.portfolio-section .portfolio_container .right_img {
+  border: 10px solid white;
+  border-radius: 10%;
+  padding: 10px;
+  height: 30vh;
+  width: 20vw;
+  float: right;
+  margin-left: 3em;
+  /* margin: 10px;
+  padding: 10px; */
+}
+h3 {
+  font-size: 35px;
+}

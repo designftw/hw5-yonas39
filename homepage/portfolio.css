@@ -1,13 +1,20 @@
 .hero {
   background-color: #191919;
 }
+.portfolio_container p {
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 10px;
+  margin: 10px;
+}
 nav {
-  font-size: 25px;
+  font-size: 35px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 45px 8% 8%;
+  /* padding: 45px 8% 8%; */
+  padding: 50px;
 }
 .about-text span {
   color: #ff7f11;
@@ -48,7 +55,7 @@ nav ul li a:hover {
   padding: 10px 25px;
   border-radius: 30px;
   transition: trasform 0.4s;
-  font-size: 18px;
+  font-size: 35px;
 }
 
 .btn:hover {
@@ -112,8 +119,8 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 .item {
-  padding: 30px;
-  margin: 20px;
+  padding: 40px;
+  margin: 30px;
   border-radius: 30px;
 }
 .item:hover {
@@ -128,8 +135,9 @@ body {
   border: #ff7f11 2px solid;
 }
 .grid_2 {
-  background-color: black;
-  color: white;
+  /* background-color: black; */
+  background-color: #ff7f11;
+  /* color: white; */
 }
 .grid_2:hover {
   background-color: #101010;
@@ -145,8 +153,9 @@ body {
   border: #ff7f11 2px solid;
 }
 .grid_4 {
-  background-color: black;
-  color: white;
+  /* background-color: black; */
+  background-color: #ff7f11;
+  /* color: white; */
 }
 .grid_4:hover {
   background-color: #101010;
@@ -154,20 +163,26 @@ body {
   border: #ff7f11 2px solid;
 }
 .portfolio-section .portfolio_container .port_img {
+  border: 10px solid white;
+  border-radius: 10%;
   padding: 10px;
-  /* width: 300px;
-  height: 400px; */
   height: 30vh;
   width: 20vw;
   float: left;
-  margin-right: 1em;
+  margin-right: 3em;
+  /* margin: 10px;
+  padding: 10px; */
 }
 .portfolio-section .portfolio_container .right_img {
+  border: 10px solid white;
+  border-radius: 10%;
   padding: 10px;
   height: 30vh;
   width: 20vw;
   float: right;
-  margin-right: 1em;
+  margin-left: 3em;
+  /* margin: 10px;
+  padding: 10px; */
 }
 h3 {
   font-size: 35px;
