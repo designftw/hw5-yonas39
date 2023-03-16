@@ -293,5 +293,14 @@
 		"trinity_recieved": 0,
 		"payee": "joint",
 		"date": ""
+	},
+	{
+		"title": "",
+		"neo_paid": "30",
+		"trinity_paid": "",
+		"neo_recieved": "30",
+		"trinity_recieved": "",
+		"payee": "neo",
+		"date": ""
 	}
 ]
