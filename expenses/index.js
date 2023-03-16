@@ -15,10 +15,19 @@ globalThis.app = createApp(
       amount: "",
 
       newtitle: "",
-      new_neo_paid: "",
-      new_trinity_paid: "",
       new_amount: "",
       new_date: "",
+
+      new_neo_paid: "",
+      new_trinity_paid: "",
+
+      new_neo_for_trinity: "",
+      new_trinity_for_neo: "",
+
+      new_trinity_self: "",
+      new_neo_self: "",
+
+      paid_to_joint: "",
 
       payer: "",
       payee: "",
@@ -26,20 +35,68 @@ globalThis.app = createApp(
 
     methods: {
       AddExpense() {
-        alert(this.payee);
-        alert(this.payer);
-        // alert(this.newtitle);
-        // this.newtitle
+        // trintity pays joint ---> neo ows half  or the opposite
+        //payer and payee  then sum the two and assingn half of the value
+        // trinty to neo or neo to trinity --> the other person ows the full amount
+        // triniyt for trinty or neo for neo for keeping track of their expenses
+        // alert(this.new_neo_paid);
         if (this.expenses.payer === "neo") {
-          this.new_neo_paid = this.new_amount;
+          if (this.expenses.payee == "trinity") {
+            this.expenses.payee = "trinity";
+            this.new_neo_for_trinity = this.new_amount;
+          } else if (this.expenses.payee == "joint") {
+            this.expenses.payee = "joint";
+            this.new_neo_paid = this.new_amount / 2;
+            this.new_neo_for_trinity = this.new_amount / 2;
+          } else {
+            this.new_neo_self = this.new_amount;
+            this.expenses.payee = "neo";
+          }
+          // this.new_neo_paid = this.new_amount;
         } else if (this.expenses.payer === "trinity") {
-          this.new_trinity_paid = this.new_amount;
+          // alert(this.expenses.payer);
+          if (this.expenses.payee == "neo") {
+            this.expenses.payee = "neo";
+            this.new_trinity_for_neo = this.new_amount;
+          } else if (this.expenses.payee == "joint") {
+            this.expenses.payee = "joint";
+            this.new_trinity_paid = this.new_amount / 2;
+            this.new_trinity_for_neo = this.new_amount / 2;
+          } else {
+            this.expenses.payee = "trinity";
+            this.new_trinity_self = this.new_amount;
+          }
         }
+
         //
+        // if (this.expenses.payee == "neo") {
+        //   this.neo_recieved = this.new_amount;
+        // } else if (this.expenses.payee == "trinity") {
+        //   this.trinity_recieved = this.new_amount;
+        // } else if (this.expenses.payee == "joint") {
+        //   this.neo_recieved = this.new_amount / 2;
+        //   this.trinity_recieved = this.new_amount / 2;
+        // }
+        // else if (this.expenses.payee == "joint") {
+        //   this.paid_to_joint = this.new_amount;
+        // }
+        // alert(this.expenses.payer);
+
+        //
+        // alert(this.new_neo_paid);
         this.expenses.push({
           title: this.newtitle,
           neo_paid: this.new_neo_paid,
           trinity_paid: this.new_trinity_paid,
+
+          trinity_paid_for_neo: this.new_trinity_for_neo,
+          neo_paid_for_trinity: this.new_neo_for_trinity,
+
+          neo_self: this.new_neo_self,
+          trinity_self: this.new_trinity_self,
+
+          payee: this.expenses.payee,
+
           date: this.new_date,
         });
         this.expenses.save();

@@ -104,3 +104,15 @@ strong {
   font-size: large;
   color: rgb(255, 119, 0);
 }
+th {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+td {
+  padding: 10px;
+  text-align: center;
+}
+.column.middle {
+  padding: 50px;
+}

@@ -13,7 +13,7 @@
       <!-- Replace hw3-starter below with your repo name (hw3-yourusername) so you can save!  -->
       <ma-data
         v-model="expenses"
-        src="https://github.com/designftw/hw3-yonas39/expenses/data.json"
+        src="https://github.com/designftw/hw5-yonas39/expenses/data.json"
       ></ma-data>
 
       <!-- App UI here -->
@@ -31,29 +31,8 @@
       </header>
 
       <div class="container">
-        <!-- ######## LEFT Column ########### -->
 
-        <div class="column left">
-          <p class="column_header">Account</p>
-          <!-- ########## Username and Password ######### -->
-          <div class="login_values">
-            <label>Username</label>
-            <input type="username" placeholder="Username" />
-          </div>
-          <div class="login_values">
-            <label>Password</label>
-            <input type="password" placeholder="password" />
-          </div>
-
-          <!-- ###### Login and Logout ##################-->
-          <!-- <button type="submit" v-if="!isLoggedIn" class="btn">Login</button> -->
-          <button type="button" typev-else @click="logout" class="login-btn">
-            Logout
-          </button>
-          <button type="submit" class="login-btn">Create Account</button>
-        </div>
-
-        <!-- ######## MIDDLE Column ########### -->
+        <!-- ######## Left Column ########### -->
 
         <div class="column middle">
           <p class="column_header">Enter Your Expenses Here:</p>
@@ -62,17 +41,20 @@
             <form class="expense-form">
               <div class="expense_labels">
                 <label for="payer" class="label_titles" >Payer:</label> <br />
-                <select name="payer" v-model="payer">
+                <select name="payer" v-model="expenses.payer">
                   <option value="neo">Neo</option>
                   <option value="trinity">Trinity</option>
+                  <!-- <option value="joint">Joint</option> -->
                 </select>
               </div>
 
               <div class="expense_labels">
                 <label for="payee" class="label_titles" >Payee:</label> <br />
-                <select name="payee" id="payee" v-model="payee">
-                  <option value="neo">Trinity</option>
-                  <option value="trinity">Neo</option>
+                <select name="payee" id="payee" v-model="expenses.payee">
+                  <option value="trinity">Trinity</option>
+                  <option value="neo">Neo</option>
+                  <option value="joint">Joint</option>
+
                 </select>
               </div>
 
@@ -83,13 +65,13 @@
                   name="amount"
                   placeholder="$100"
                   id="amount"
-                  v-model="amount"
+                  v-model="new_amount"
                 />
               </div>
 
               <div class="expense_labels">
                 <label class="label_titles">Date</label> 
-                <input type="date" v-model="new_trinity_paid" />
+                <input type="date" v-model="new_date" />
               </div>
 
               <div class="expense_labels">
@@ -102,10 +84,11 @@
             <button type="submit" class="btn" @click="AddExpense">
               Add Expense
             </button>
-            <button type="submit" class="btn" @click="removeInputBox(index)">
+            <!-- <button type="submit" class="btn" @click="removeInputBox(index)">
               Remove Expense
-            </button>
-            <p>the total balance is: {{total_balance}}</p>
+            </button> -->
+            <p > <strong>
+              Trinity </strong> ows <strong>Neo</strong>: {{total_balance}}</p>
           </div>
         </div>
 
@@ -154,13 +137,7 @@
         </div>
       </div>
 
-
-      <!-- ################ tutorial ###########-->
-       <!-- ################ tutorial ###########-->
-          <!-- ################ tutorial ###########-->
-               <!-- ################ tutorial ###########-->
-
-               
+     
       <!-- <div> {{expenses}}</div> -->
       <div>
         <!-- <p>The Json file practice</p> -->
@@ -169,13 +146,27 @@
           <table >
               <thead>
                   <tr>
-                      <th colspan="2">The Json file practice</th>
+                      <th colspan="6">The Json file practice</th>
+
+                  </tr>
+                  <tr>
+                    <th>title</th>
+                    <th>Trinity paid</th>
+                    <th>Neo paid</th>
+                    <th>Payee</th>
+                    <th>Date</th>
                   </tr>
               </thead>
               <tbody v-for="exp in expenses">
                   <tr>
+                    
                       <td>{{exp.title}}</td>
                       <td>{{exp.trinity_paid}}</td>
+                      <td>{{exp.neo_paid}}</td>
+                      <td>{{exp.payee}}</td>
+                      <!-- <td>{{exp.trinity_paid_for_neo}}</td>
+                      <td>{{exp.neo_paid_for_trinity}}</td> -->
+                      <td>{{exp.date}}</td>
                   </tr>
               </tbody>
           </table>
