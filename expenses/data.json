@@ -9,5 +9,200 @@
 		"trinity_self": "",
 		"payee": "neo",
 		"date": "2023-03-16"
+	},
+	{
+		"title": "trinity paid",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "",
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "100",
+		"payee": "trinity",
+		"date": ""
+	},
+	{
+		"title": "",
+		"neo_paid": "",
+		"trinity_paid": 100,
+		"trinity_paid_for_neo": 100,
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "joint",
+		"date": ""
+	},
+	{
+		"title": "",
+		"neo_paid": "",
+		"trinity_paid": 100,
+		"trinity_paid_for_neo": "200",
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "neo",
+		"date": ""
+	},
+	{
+		"title": "",
+		"neo_paid": "",
+		"trinity_paid": 100,
+		"trinity_paid_for_neo": "200",
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "200",
+		"payee": "trinity",
+		"date": ""
+	},
+	{
+		"title": "",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "",
+		"neo_paid_for_trinity": "",
+		"neo_self": "22",
+		"trinity_self": "",
+		"payee": "neo",
+		"date": ""
+	},
+	{
+		"title": "boy ",
+		"neo_paid": "",
+		"trinity_paid": 150,
+		"trinity_paid_for_neo": 150,
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "joint",
+		"date": "2023-03-16"
+	},
+	{
+		"title": "today ",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "",
+		"neo_paid_for_trinity": "33",
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "trinity",
+		"date": "2023-03-16"
+	},
+	{
+		"title": "split",
+		"neo_paid": 20,
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "",
+		"neo_paid_for_trinity": 20,
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "joint",
+		"date": "2023-03-16"
+	},
+	{
+		"title": "",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "",
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "",
+		"date": ""
+	},
+	{
+		"title": "for sat ",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "49",
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "neo",
+		"date": "2023-03-17"
+	},
+	{
+		"title": "for sat ",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "49",
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "neo",
+		"date": "2023-03-17"
+	},
+	{
+		"title": "for nothing ",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "49",
+		"neo_paid_for_trinity": "5000000",
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "trinity",
+		"date": "2023-03-17"
+	},
+	{
+		"title": "for nothing ",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "49",
+		"neo_paid_for_trinity": "5000000",
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "trinity",
+		"date": "2023-03-17"
+	},
+	{
+		"title": "88",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "45",
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "neo",
+		"date": "2023-03-16"
+	},
+	{
+		"title": "",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "",
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "",
+		"date": ""
+	},
+	{
+		"title": "",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "",
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "",
+		"date": ""
+	},
+	{
+		"title": "t for n",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "40",
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "neo",
+		"date": "2023-03-16"
+	},
+	{
+		"title": "t for n",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "40",
+		"neo_paid_for_trinity": "",
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "neo",
+		"date": "2023-03-16"
 	}
 ]
