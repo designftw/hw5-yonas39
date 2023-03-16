@@ -1,0 +1,90 @@
+body {
+  background-color: #191919;
+  padding: 40px;
+}
+.heading {
+  text-align: center;
+  color: white;
+  font-size: 75px;
+  padding: 0 0 20px;
+  margin: 0 0 20px;
+}
+/* .portfolio-section {
+  width: 100%;
+  height: 100%;
+  margin: 10px 50px 50px;
+  padding: 50px;
+
+  border-radius: 30px;
+} */
+
+.container {
+  margin: 30px;
+  padding: 30px;
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+}
+/* portfolio */
+.container h2 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+/* .portfolio-item {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+} */
+.container {
+  padding: 40px;
+  margin: 30px;
+  border-radius: 30px;
+}
+.container:hover {
+  transform: translateY(-5px);
+}
+.contain-1 {
+  background-color: #ff7f11;
+}
+.contain-1:hover {
+  background-color: #101010;
+  color: #ff7f11;
+  border: #ff7f11 2px solid;
+}
+
+.container-2 {
+  background-color: #ff7f11;
+}
+.container-2:hover {
+  background-color: #101010;
+  color: #ff7f11;
+  border: #ff7f11 2px solid;
+}
+.container-3 {
+  background-color: #ff7f11;
+}
+.container-3:hover {
+  background-color: #101010;
+  color: #ff7f11;
+  border: #ff7f11 2px solid;
+}
+
+.container dt {
+  font-size: 23px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.container dd {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}

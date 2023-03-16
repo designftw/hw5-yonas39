@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <!-- I HAVE a Hard time understanding vue.js. what should I do to update the spreadsheet? update Json?. -->
+  
     <div id="app">
       <!-- Replace hw3-starter below with your repo name (hw3-yourusername) so you can save!  -->
       <ma-data
@@ -17,7 +17,6 @@
       ></ma-data>
 
       <!-- App UI here -->
-
       <!-- Delete this line when you write your actual UI -->
       <!-- {{ expenses.length }} expenses loaded. -->
 
@@ -27,9 +26,8 @@
           <button @click="expenses.logout()">Log out</button>
         </span>
         <button v-else @click="expenses.login()">Log in</button>
-        <h1>Expense Tracker</h1>
       </header>
-
+      <h1>Expense Tracker</h1>
       <div class="container">
 
         <!-- ######## Left Column ########### -->
@@ -88,7 +86,7 @@
               Remove Expense
             </button> -->
             <p > <strong>
-              Trinity </strong> ows <strong>Neo</strong>: {{total_balance}}</p>
+              Neo </strong> ows <strong>Trinity</strong>: {{total_balance}}</p>
           </div>
         </div>
 
@@ -150,7 +148,7 @@
 
                   </tr>
                   <tr>
-                    <th>title</th>
+                    <th>Title</th>
                     <th>Trinity paid</th>
                     <th>Neo paid</th>
                     <th>Payee</th>
