@@ -221,5 +221,14 @@
 	{
 		"title": "Neo blue pills (3 bottles)",
 		"trinity_paid": 305
+	},
+	{
+		"title": "hey",
+		"neo_paid": "",
+		"trinity_paid": "",
+		"neo_recieved": "",
+		"trinity_recieved": "200",
+		"payee": "",
+		"date": "2023-03-14"
 	}
 ]
