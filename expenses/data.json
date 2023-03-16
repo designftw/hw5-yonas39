@@ -86,5 +86,16 @@
 		"trinity_self": "",
 		"payee": "trinity",
 		"date": "2023-03-16"
+	},
+	{
+		"title": "split",
+		"neo_paid": 20,
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "",
+		"neo_paid_for_trinity": 20,
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "joint",
+		"date": "2023-03-16"
 	}
 ]
