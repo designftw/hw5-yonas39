@@ -143,7 +143,7 @@ nav ul li a:hover {
 .about-text h3 {
   color: white;
   letter-spacing: 2px;
-  /* font-size: 22px; */
+
   margin-bottom: 15px;
 }
 
@@ -179,7 +179,6 @@ button:hover {
   padding: 100px 0px;
 }
 .title h2 {
-  /* background: #101010; */
   color: white;
   font-size: 75px;
   width: 1130px;
@@ -219,7 +218,6 @@ button:hover {
   color: #ff7f11;
 }
 .school-text span {
-  /* color: black; */
   font-size: 16px;
   font-weight: bold;
 }
@@ -230,8 +228,6 @@ button:hover {
 }
 /* portfolio */
 .portfolio-section h2 {
-  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
-  /* width: 100%; */
   text-align: center;
   color: white;
   font-size: 75px;
@@ -244,11 +240,10 @@ button:hover {
   grid-template-columns: 50% 50%;
   grid-gap: 30px;
   width: 100%;
-  /* width: 1000px; */
+
   padding: 0px;
   width: 100%;
 
-  /* grid-template-columns: repeat(auto-fi, minimax(300px, 1fr)); */
   margin: 2rem;
 }
 .item {
@@ -321,9 +316,6 @@ body {
 }
 
 .portfolio_container {
-  /* background-color: #191919; */
-  /* margin: 30px;
-  padding: 50px 100px; */
   margin: 20px;
   padding: 30px;
   display: grid;
@@ -331,29 +323,15 @@ body {
   grid-template-columns: 50% 50%;
   grid-gap: 20px;
 }
-/* portfolio */
+
 .portfolio-section h2 {
-  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
-  /* width: 100%; */
   text-align: center;
   color: white;
   font-size: 75px;
   text-transform: capitalize;
   margin-bottom: 40px;
 }
-/* .portfolio_container {
-  display: grid;
-  grid-template-rows: 50%;
-  grid-template-columns: 50% 50%;
-  grid-gap: 30px;
-  width: 100%; */
-/* width: 1000px; */
-/* padding: 0px;
-  width: 100%; */
 
-/* grid-template-columns: repeat(auto-fi, minimax(300px, 1fr)); */
-/* margin: 2rem;
-} */
 .portfolio-item {
   padding: 1rem;
   border-radius: 10px;
@@ -377,9 +355,7 @@ body {
   border: #ff7f11 2px solid;
 }
 .grid_2 {
-  /* background-color: black; */
   background-color: #ff7f11;
-  /* color: white; */
 }
 .grid_2:hover {
   background-color: #101010;
@@ -395,9 +371,7 @@ body {
   border: #ff7f11 2px solid;
 }
 .grid_4 {
-  /* background-color: black; */
   background-color: #ff7f11;
-  /* color: white; */
 }
 .grid_4:hover {
   background-color: #101010;
@@ -412,8 +386,6 @@ body {
   width: 20vw;
   float: left;
   margin-right: 3em;
-  /* margin: 10px;
-  padding: 10px; */
 }
 .portfolio-section .portfolio_container .right_img {
   border: 10px solid white;
@@ -423,8 +395,6 @@ body {
   width: 20vw;
   float: right;
   margin-left: 3em;
-  /* margin: 10px;
-  padding: 10px; */
 }
 h3 {
   font-size: 35px;
