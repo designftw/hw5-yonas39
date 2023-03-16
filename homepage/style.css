@@ -6,18 +6,11 @@
   box-sizing: border-box;
 }
 
-/* .hero {
-  height: 100vh;
-  width: 100%;
-  background-image: url(suit_img.jpg);
-  background-size: cover;
-  background-position: center;
-} */
 .hero {
   background-color: #191919;
 }
 nav {
-  position: fixed;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -300,4 +293,16 @@ button:hover {
   background-color: #101010;
   color: #ff7f11;
   border: #ff7f11 2px solid;
+}
+.portfolio-section .portfolio_container .port_img {
+  padding: 10px;
+  width: 300px;
+  float: left;
+  margin-right: 1em;
+}
+.portfolio-section .portfolio_container .right_img {
+  padding: 10px;
+  width: 200px;
+  float: right;
+  margin-right: 1em;
 }

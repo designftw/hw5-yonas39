@@ -7,7 +7,18 @@ nav {
   justify-content: space-between;
   padding: 45px 8% 8%;
 }
-
+label {
+  font-size: 23px;
+}
+p {
+  font-size: 28px;
+}
+input {
+  font-size: 20px;
+  align-items: justify;
+  width: 250px;
+  height: 20px;
+}
 .logo {
   color: beige;
   font-size: 35px;
@@ -40,6 +51,7 @@ nav .btn {
   padding: 10px 25px;
   margin: 10px 15px;
   border-radius: 30px;
+  font-size: 20px;
 }
 
 nav .btn:hover {
@@ -49,7 +61,8 @@ nav .btn:hover {
 }
 
 .message_container {
-  margin: 100px;
+  display: grid;
+  margin: 200px;
   line-height: 1.5;
 }
 
