@@ -299,5 +299,16 @@
 		"trinity_self": "",
 		"payee": "trinity",
 		"date": ""
+	},
+	{
+		"title": "stuff",
+		"neo_paid": 500000000000,
+		"trinity_paid": "",
+		"trinity_paid_for_neo": "",
+		"neo_paid_for_trinity": 500000000000,
+		"neo_self": "",
+		"trinity_self": "",
+		"payee": "joint",
+		"date": "2023-04-03"
 	}
 ]
